@@ -1,0 +1,209 @@
+{
+  "telegram": {
+    "token": "YOUR_TELEGRAM_BOT_TOKEN",
+    "channel_id": "@your_channel_or_chat_id"
+  },
+  "sources": [
+    {
+      "name": "BBC News Russian",
+      "tag": "#bbcru",
+      "rss": "https://feeds.bbci.co.uk/russian/rss.xml",
+      "priority": 2
+    },
+    {
+      "name": "RT Russian",
+      "tag": "#rt",
+      "rss": "https://russian.rt.com/rss",
+      "priority": 1
+    },
+    {
+      "name": "TASS",
+      "tag": "#tass",
+      "rss": "https://tass.ru/rss/v2.xml",
+      "priority": 1
+    },
+    {
+      "name": "RIA Novosti",
+      "tag": "#ria",
+      "rss": "https://ria.ru/export/rss2/archive/index.xml",
+      "priority": 1
+    },
+    {
+      "name": "Fox News",
+      "tag": "#foxnews",
+      "rss": "https://feeds.foxnews.com/foxnews/latest",
+      "priority": 3
+    },
+    {
+      "name": "Reuters - World News",
+      "tag": "#reuters",
+      "rss": "https://feeds.reuters.com/Reuters/worldNews",
+      "priority": 2
+    },
+    {
+      "name": "CNN Breaking News",
+      "tag": "#cnn",
+      "rss": "http://rss.cnn.com/rss/cnn_latest.rss",
+      "priority": 3
+    },
+    {
+      "name": "New York Times World",
+      "tag": "#nyt",
+      "rss": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "priority": 2
+    },
+    {
+      "name": "Washington Post World",
+      "tag": "#washpost",
+      "rss": "https://feeds.washingtonpost.com/rss/world",
+      "priority": 2
+    },
+    {
+      "name": "The Guardian World",
+      "tag": "#guardian",
+      "rss": "https://www.theguardian.com/world/rss",
+      "priority": 2
+    },
+    {
+      "name": "Financial Times World",
+      "tag": "#ft",
+      "rss": "https://www.ft.com/world?format=rss"
+    },
+    {
+      "name": "Euronews",
+      "tag": "#euronews",
+      "rss": "https://www.euronews.com/rss?level=theme&name=news"
+    },
+    {
+      "name": "Deutsche Welle",
+      "tag": "#dw",
+      "rss": "https://rss.dw.com/rdf/rss-en-all"
+    },
+    {
+      "name": "Al Jazeera",
+      "tag": "#aljazeera",
+      "rss": "https://www.aljazeera.com/xml/rss/all.xml"
+    },
+    {
+      "name": "France 24",
+      "tag": "#france24",
+      "rss": "https://www.france24.com/en/rss"
+    },
+    {
+      "name": "South China Morning Post",
+      "tag": "#scmp",
+      "rss": "https://www.scmp.com/rss/91/feed"
+    },
+    {
+      "name": "Japan Times",
+      "tag": "#japantimes",
+      "rss": "https://www.japantimes.co.jp/feed/news/"
+    }
+  ],
+  "filters": {
+    "include_keywords": [
+      "Украина", "Ukraine", "Киев", "Kyiv",
+      "Россия", "Russia", "Москва", "Kremlin", "Russian",
+      "США", "US", "America", "White House", "Washington", "American",
+      "Европа", "Europe", "ЕС", "European Union", "Brussels", "European",
+      "Китай", "China", "Пекин", "Beijing", "Chinese",
+      "НАТО", "NATO", "ООН", "UN", "United Nations",
+      "Ближний Восток", "Middle East", "Израиль", "Israel", "Палестина", "Palestine", "Иран", "Iran", "Газа", "Gaza",
+      "Тайвань", "Taiwan", "Африка", "Africa",
+      "война", "war", "military", "конфликт", "conflict", "эскалация", "escalation",
+      "спецоперация", "special operation", "переговоры", "negotiations", "мир", "peace",
+      "безопасность", "security", "оборона", "defense",
+      "политика", "politics", "political", "президент", "president",
+      "выборы", "election", "elections", "Путин", "Putin", "Зеленский", "Zelenskyy",
+      "Байден", "Biden", "Трамп", "Trump", "Си Цзиньпин", "Xi Jinping",
+      "Макрон", "Macron", "Шольц", "Scholz", "Сунак", "Sunak",
+      "дипломатия", "diplomacy", "международный", "international",
+      "саммит", "summit", "G7", "G20", "БРИКС", "BRICS",
+      "демократия", "democracy", "авторитаризм", "authoritarianism",
+      "протесты", "protests", "митинги", "rallies", "закон", "law",
+      "экономика", "economy", "economic", "санкции", "sanctions",
+      "инфляция", "inflation", "рецессия", "recession",
+      "энергетика", "energy", "нефть", "oil", "газ", "gas",
+      "криптовалюта", "cryptocurrency", "биткоин", "bitcoin",
+      "рынок", "market", "акции", "stocks", "технологии", "technology", "IT",
+      "искусственный интеллект", "artificial intelligence", "AI",
+      "общество", "society", "звезды", "celebrities", "шоу-бизнес", "show business",
+      "блогеры", "bloggers", "инфлюенсеры", "influencers",
+      "культура", "culture", "искусство", "art", "спорт", "sport", "Олимпиада", "Olympics",
+      "скандал", "scandal", "расследование", "investigation",
+      "фейки", "fake news", "дезинформация", "disinformation",
+      "экология", "ecology", "изменение климата", "climate change",
+      "Илон Маск", "Elon Musk", "Tesla", "SpaceX", "X", "Twitter",
+      "Марк Цукерберг", "Mark Zuckerberg", "Meta", "Facebook",
+      "Алексей Навальный", "Alexei Navalny",
+      "Гугл", "Google", "Apple", "Amazon"
+    ],
+    "exclude_keywords": [],
+    "max_age_hours": 24,
+    "max_age_minutes": 120
+  },
+  "scheduler": {
+    "interval_minutes": 10
+  },
+  "posting": {
+    "min_delay_minutes": 1,
+    "max_delay_minutes": 4
+  },
+  "translation": {
+    "provider": "googletrans",
+    "target_language": "ru"
+  },
+  "ai_summarization": {
+    "enabled": true,
+    "provider": "groq",
+    "api_key": "YOUR_GROQ_API_KEY",
+    "model": "llama-3.1-8b-instant",
+    "max_summary_length": 500,
+    "temperature": 0.2,
+    "max_tokens": 1024,
+    "cache_enabled": true,
+    "cache_ttl_hours": 24,
+    "rate_limit": {
+      "max_urgency_checks": 8,
+      "max_freshness_checks": 10,
+      "delay_between_calls": 0.8
+    }
+  },
+  "deduplication": {
+    "enabled": true,
+    "similarity_threshold": 0.7,
+    "title_weight": 0.6,
+    "content_weight": 0.4
+  },
+  "alternative_sources": {
+    "newsapi": {
+      "enabled": false,
+      "api_key": "",
+      "sources": ["bbc-news", "cnn", "reuters", "associated-press"],
+      "keywords": ["breaking", "urgent", "crisis", "war", "politics"]
+    },
+    "reddit": {
+      "enabled": false,
+      "subreddits": ["worldnews", "news", "politics", "technology", "programming"]
+    },
+    "twitter": {
+      "enabled": false,
+      "bearer_token": "",
+      "api_key": "",
+      "api_secret": "",
+      "accounts": [
+        "@BBCBreaking", "@CNN", "@Reuters", "@AP", "@nytimes", "@washingtonpost", "@guardian", "@independent",
+        "@DWNews", "@France24_en", "@euronews", "@DeutscheWelle", "@RT_com", "@SputnikInt", "@TASS_agency",
+        "@AlJazeera", "@AJEnglish", "@MiddleEastEye", "@Haaretz", "@TimesofIsrael", "@Jerusalem_Post",
+        "@XHNews", "@CGTNOfficial", "@globaltimesnews", "@ChinaDaily", "@SCMP_News", "@NikkeiAsia",
+        "@FT", "@WSJ", "@bloomberg", "@business", "@CNBC", "@MarketWatch", "@Forbes", "@FortuneMagazine",
+        "@politico", "@thehill", "@axios", "@voxdotcom", "@BuzzFeedNews", "@HuffPost", "@Slate",
+        "@techcrunch", "@Wired", "@verge", "@arstechnica", "@engadget", "@mashable", "@gizmodo",
+        "@espn", "@SkySports", "@BBCSport", "@guardian_sport", "@ESPNFC", "@FIFAcom", "@UEFAcom"
+      ]
+    }
+  },
+  "admin": {
+    "allowed_user_ids": []
+  }
+}
