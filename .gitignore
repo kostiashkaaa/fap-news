@@ -25,20 +25,19 @@ wheels/
 venv/
 ENV/
 env/
+.env
 
 # IDE
-.vscode/
 .idea/
+.vscode/
 *.swp
 *.swo
 *~
 
-# Environment variables
-.env
-.env.local
-
-# Configuration with sensitive data
+# Configuration (contains secrets)
 config.json
+config.json.bak*
+.env
 
 # Database files
 *.sqlite3
@@ -48,11 +47,23 @@ config.json
 *.log
 logs/
 
-# OS
-.DS_Store
-Thumbs.db
-
 # Temporary files
 *.tmp
-*.bak
-*.cache
+*.temp
+diagnose_output.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Distribution
+*.tar.gz
+*.zip

@@ -15,3 +15,7 @@ lxml==5.3.0                  # XML/HTML parser
 
 # AI & Machine Learning
 groq==0.31.1                 # Groq API client for AI summarization
+
+# Async & Reliability
+aiofiles>=23.2.1             # Async file operations
+tenacity>=8.2.3              # Retry logic for reliability
